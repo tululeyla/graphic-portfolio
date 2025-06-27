@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Leyla's Graphic Design Portfolio</title>
+  <style>
+    /* ===== Global Styles ===== */
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fefefe;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #111;
+      color: white;
+      text-align: center;
+      padding: 1.5rem 1rem;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      margin: 0;
+    }
+
+    nav {
+      background: #222;
+      display: flex;
+      justify-content: center;
+      padding: 0.8rem;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 1.2rem;
+      font-size: 1rem;
+    }
+
+    section {
+      padding: 1.5rem 1.2rem;
+    }
+
+    h2 {
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+    }
+
+    .project {
+      background: #f4f4f4;
+      margin-bottom: 1.8rem;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    .project img {
+      width: 100%;
+      border-radius: 8px;
+      margin-top: 1rem;
+    }
+
+    .contact {
+      background: #eee;
+      padding: 2rem 1.5rem;
+      text-align: center;
+      border-radius: 12px;
+      margin: 1.5rem;
+    }
+
+    .contact a {
+      color: #000;
+      background: #ffd700;
+      padding: 0.8rem 1.5rem;
+      text-decoration: none;
+      border-radius: 10px;
+      display: inline-block;
+      margin-top: 1rem;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+
+    /* ===== Desktop View ===== */
+    @media (min-width: 768px) {
+      body {
+        max-width: 1000px;
+        margin: auto;
+        padding: 2rem;
+      }
+
+      .project {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        padding: 2rem;
+      }
+
+      .project h3 {
+        font-size: 1.5rem;
+        width: 40%;
+      }
+
+      .project img {
+        width: 60%;
+        border-radius: 10px;
+        margin-top: 0;
+      }
+
+      .contact {
+        max-width: 600px;
+        margin: 2rem auto;
+      }
+
+      nav a {
+        font-size: 1.1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Leyla's Portfolio</h1>
+  </header>
+
+  <nav>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="projects">
+    <h2>My Work</h2>
+
+    <div class="project">
+      <h3>Logo Design</h3>
+      <img src="images/b.jpg" alt="Logo Design" />
+    </div>
+
+    <div class="project">
+      <h3>Social Media Post</h3>
+      <img src="images/c.jpg" alt="Social Media Post" />
+    </div>
+
+    <div class="project">
+      <h3>Flyer Design</h3>
+      <img src="images/a.jpg" alt="Flyer Design" />
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Hire Me</h2>
+    <p>Let’s work together! Send me an email:</p>
+    <a href="mailto:tululeyla7@email.com">Send Email</a>
+  </section>
+
+</body>
+</html>
